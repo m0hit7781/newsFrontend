@@ -1,0 +1,650 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --grey-primary: #e5e5e5;
+  --primary-white: white;
+  --primary-red: rgba(195, 24, 21, 1);
+  --primary-footer: rgba(14, 30, 50, 1);
+}
+html, body, #root, .App {
+  height: 100%;
+}
+body {
+  box-sizing: border-box;
+  font-family: "IBM Plex Serif", serif;
+  background: var(--grey-primary);
+  position: relative;
+  /* min-height: 100vh; */
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.navbar {
+  height: 80px;
+  background: var(--primary-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px;
+}
+.logo img {
+  width: 50px;
+  color: black;
+}
+
+.middlemenu {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+
+.middlemenu p {
+  margin: 0px 30px;
+  cursor: pointer;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.middlemenu p:hover{
+  transition: 1s;
+  opacity: 0.6;
+}
+.rightmenu svg {
+  margin: 0px 30px;
+  cursor: pointer;
+}
+
+.hero{
+  display: flex;
+  padding: 0px 100px;
+  margin: 30px 0px;
+}
+.heroleft{
+  width: 50%;
+  float: left;
+}
+.heroright{
+  width: 45%;
+  float: right;
+  padding: 50px 0px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.heronewstrending h3{
+  font-family: 'Poppins';
+}
+.heronewstrending{
+  display: flex;
+  justify-content: space-between;
+
+}
+.trendingright{
+  display: flex;
+}
+.trendingright div{
+  margin-left: 20px;
+
+}
+.trendingright div{
+  text-align: center;
+}
+.trendinglike svg{
+  font-size: 20px
+}
+.heroleft img{
+  width: 95%;
+}
+.trendingtext h3{
+  color: var(--primary-red);
+}
+.heronewstitle p{
+  font-family: 'Poppins';
+  margin-top: 20px;
+}
+.publishdata{
+  display: flex;
+}
+.publishdata div{
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.publishdata div p{
+  font-family: 'Poppins';
+}
+.publishtime p{
+  font-weight: 900;
+}
+.publishauthor p, .minutesread p{
+  opacity: 0.7;
+}
+.breakingnews{
+  height: 80px;
+  background: var(--primary-red);
+  margin: 0px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.breakingnews p{
+  font-family: 'Poppins';
+  margin: 0px 20px;
+}
+.breakingnewsbtn{
+  background: #e5e5e5;
+  color: var(--primary-red);
+  padding: 16px;
+  border-radius: 5px;
+}
+.breakingnewsnews{
+  color: #e5e5e5;
+}
+.homenews{
+  margin: 20px 100px;
+  overflow:auto; 
+}
+.homenewsleft{
+  width: 60%;
+  float: left;
+}
+.homenewsright{
+  width: 40%;
+  float: right;
+}
+.newstitleshome{
+  height: 50px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.newstitleshome div{
+  margin: 0px 10px;
+}
+.newstitleleft {
+  display: flex;
+}
+.newstitleleft p{
+  margin-right: 20px;
+  font-family: 'Poppins';
+  font-weight: 900;
+  cursor: pointer;
+}
+.lateststoryunderline{
+  border-bottom: 4px solid var(--primary-red);
+  border-left: 10px;
+}
+.newscard{
+  height: 520px;
+  background: white;
+  width: 380px;
+  margin: 20px 0px;
+  margin-right: 30px;
+}
+.newsthumbnail img{
+  width: 380px;
+  height: 210px;
+}
+.newscarddata{
+  margin: 10px 20px;
+}
+.newscarddata h3{
+  font-size: 18px;
+  font-family: 'IBM Plex Serif', serif;
+  color: rgba(42, 42, 42, 1);
+}
+.newscarddata p{
+  font-family: 'Nunito Sans', serif;
+  line-height: 22px;
+  margin-top: 20px;
+  /* background: blue; */
+  /* max-height: 80%; */
+}
+.newscontainer{
+  height: 180px;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.newscards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.livecard{
+  /* background: red; */
+  max-width: 100%;
+  margin-left: 80px;
+}
+.livecardtitle{
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+.livecardtitle h3{
+  font-family: 'Poppins';
+  color: var(--primary-red);
+  margin-right: 20px;
+  font-size: 18px;
+}
+.livecardnews{
+  margin: 20px 0px;
+}
+.livecardnews img{
+  min-width: 100%;
+}
+.livecardnews h2{
+  font-size: 22px;
+}
+.newscardpostdata{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 50px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+.newscardpostdata p{
+  font-weight: bold;
+  font-family: 'Poppins' serif;
+}
+.newscardpostdata .postedbycard, .minutereadcard{
+  opacity: 0.6;
+}
+.sharecard {
+  display: flex;
+  justify-content: center;
+}
+.bordershare{
+  border-top: 0.5px solid rgba(42, 42, 42, 1);
+  border-color: #e5e5e5;
+
+}
+.sharecard div{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.sharecard div svg{
+  margin-right: 10px;
+}
+.sharecard div p {
+  height: 100%;
+  text-align: center;
+}
+.locationbox{
+  background: white;
+  height: 200px;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+.locationbox form input{
+  border: 2px solid #141414;
+  border-color: #e5e5e5;
+  padding: 22px 20px;
+  /* height: 60px; */
+  outline: none;
+}
+.locationbox form input::placeholder{
+  font-family: 'Poppins', serif;
+  padding: 0px 20px;
+  font-size: 15px;
+}
+.locationbox form button{
+  background: var(--primary-red);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  width: 120px;
+  color: white;
+  font-family: 'Poppins', serif;
+  cursor: pointer;
+  margin-top: 20px
+}
+.locationnews h3{
+  font-family: 'Poppins';
+  margin-bottom: 20px;
+}
+.locationbox p{
+  font-family: 'Nunito Sans', serif;
+  margin-bottom: 20px;
+}
+.locationbox form{
+  display: flex;
+  flex-direction: column
+}
+.showmorebutton{
+  width: 100%;
+  text-align: center;
+}
+.showmorebutton button{
+  padding: 10px 40px;
+  outline: none;
+  border: 1px solid rgba(195, 24, 21, 1);
+  color: var(--primary-red);
+  cursor: pointer;
+  font-family: 'Poppins', serif;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.showmorebutton button:hover{
+  background: var(--primary-red);
+  color: white;
+  border: 1px solid white;
+}
+.editorpicks{
+  margin: 10px 100px;
+}
+.editorpicksCards{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.editorpictitle{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.editorpictitle h3{
+  font-size: 15px;
+  font-family: 'Poppins', serif;
+  margin-right: 10px;
+}
+.editornewswrapper{
+  display: flex;
+  width: 50%;
+  margin-right: 10px;
+  justify-content: space-between;
+  max-height: 170px;
+  cursor: pointer;
+  /* overflow: hidden; */
+}
+.editornewscardimage img {
+    width: 272px;
+}
+.editornewsdata{
+  margin: 10px 10px;
+}
+.editornewsdata h2{
+  font-size: 18px;
+}
+.editornewsdata p{
+  font-size: 14px;
+  font-family: 'Nunito Sans', serif;
+  margin-top: 5px
+}
+.footer {
+  background:rgba(14, 30, 50, 1);
+  height: 250px;
+  color: #e5e5e5;
+  display: flex;
+  padding-top: 50px;
+  padding-left: 150px;
+  padding-right: 250px;
+  justify-content: space-between;
+  margin-top: auto 
+}
+.footer-logo p{
+  font-family: 'Poppins', serif;
+}
+.menufooterlist{
+  display: flex;
+}
+.menufooterlist p{
+  margin-right: 20px;
+  margin-bottom: 50px;
+  color: #fff;
+  font-family: 'Poppins', serif
+}
+.footermiddlemenu p{
+    color: #fff;
+    font-family: 'Poppins', serif;
+    margin-bottom: 20px;
+}
+.footericons{
+  font-size:40px;
+}
+.footer-logo{
+  text-align: center;
+}
+.login-card{
+  min-height: calc(100vh - 100px);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 30px 0px;
+}
+.signup-card{
+  height: 550px
+}
+.login-card-header{
+  height: fit-content;
+  background:rgba(14, 30, 50, 1);
+  width: 450px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 40px 0px
+}
+.login-card-header h2{
+  font-family: 'Poppins', serif;
+  text-align: center;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+.logininput{
+  width: 90%;
+  /* margin: 10px 20px; */
+  height: 40px;
+  border: none;
+  outline: none;
+}
+.form-group input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px blueviolet;
+}
+.form-group input{
+  padding: 0px 10px;
+  font-size: 16px;
+  border: 1px solid #597183;
+  border-radius: 8px;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+  width: 93%;
+  height: 40px;
+  margin: 10px 0px;
+}
+.form-group{
+  margin: 0 20px
+}
+.form-group label{
+  font-family: 'Poppins', serif;
+}
+.btn-login{
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 5px 20px;
+  margin: 0 auto;
+  background: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  font-family: 'Poppins', serif;
+  font-size: 15px;
+}
+.btn-login:hover{
+  background: var(--primary-red);
+  color: white;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.loginerror{
+  background: #E92F2F;
+  height: 40px;
+  margin: 0px 20px;
+  margin-right: 25px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', serif;
+  /* margin-bottom: 20px; */
+}
+.message-status{
+  width: 95%;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.loader {
+  width: 30px;
+  height: 100%;
+  animation: loading 1s infinite ease-out;
+  margin: auto;
+  border-radius: 50%;
+  background-color: red;
+}
+@keyframes loading {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(8);
+    opacity: 0;
+  }
+}
+.profilepage{
+  margin: 20px 100px;
+  height: 300px;
+  background: var(--primary-white);
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.profiledata{
+  padding: 40px 0px;
+  font-family: 'Poppins', serif;
+}
+
+@media (max-width: 768px){
+  .logo{
+    margin-left: 5px;
+  }
+  .navbar {
+    padding: 0px 10px;
+  }
+  .middlemenu{
+    display: none;
+  }
+  .hero{
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .heroleft{
+    width: 100%;
+  }
+  .heroright{
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .heroleft img {
+    width: 100%;
+  }
+  .breakingnews{
+    margin: 0px 20px;
+  }
+  .breakingnewsbtn{
+    padding: 5px;
+  }
+  .rightmenu svg {
+    margin: 18px;
+    width: 25px;
+  }
+  .homenews{
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .homenewsleft{
+    width: 100%;
+  }
+  .homenewsright{
+    width: 100%;
+  }
+  .newstitleshome{
+    width: 100%;
+  }
+  .newscards{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .newscard{
+    width: 100%;
+  }
+  .newsthumbnail img{
+    width: 100%;
+  }
+  .livecard{
+    margin-left: 0px;
+    min-width: 100%;
+  }
+  .editorpicks{
+    margin: 10px 10px;
+  }
+  .editorpicksCards{
+    flex-direction: column;
+  }
+  .editornewswrapper{
+    flex-direction: column;
+    width: 100%;
+    max-height: fit-content
+  }
+  .editornewscardimage img{
+    width: 100%;
+  }
+  .editornewsdata h2{
+    font-size: 20px
+  }
+  .editornewsdata p{
+    font-size: 17px;
+  }
+  .editorpictitle {
+    margin-bottom: 20px;
+  }
+  .editorpictitle h3{
+    font-size: 18px;
+  }
+  .footer{
+    flex-direction: column;
+    height: 100%;
+    padding: 40px 30px;
+  }
+  .footer-logo{
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .profilepage{
+    margin: 20px 10px;
+  }
+
+}
