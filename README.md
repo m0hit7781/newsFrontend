@@ -1,4 +1,5 @@
 # NBC News Website : React.js
+This NBC Website made using React.js this is frontend only.
 
 ## Available Scripts
 
